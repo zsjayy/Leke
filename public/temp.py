@@ -1,10 +1,8 @@
-import time
-
 from basic.get_driver import GetDriver
 from page.page_login import PageLogin
 
 
-class PLogin:
+class PublicLogin:
     # 设置driver属性
     driver = None
 
@@ -14,13 +12,12 @@ class PLogin:
         # 实例化 获取页面对象PageLogin
         self.login = PageLogin()
 
-    def P_login(self):
+    def public_login(self):
         # 调用登录方法
-        time.sleep(3)
         self.login.page_login_input_username()
         self.login.page_login_input_password()
         self.login.page_login_login_button()
 
 
-run = PLogin()
-run.P_login()
+# run = PublicLogin()
+# run.public_login()
