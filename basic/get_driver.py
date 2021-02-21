@@ -4,8 +4,16 @@ from selenium import webdriver
 class GetDriver:
     driver = None
 
+<<<<<<< HEAD
     # 获取driver
     '''只需要启用一次driver,所以需要使用类属性'''
+=======
+    def __init__(self):
+        self.driver = webdriver.Chrome(r'..\tools\chromedriver.exe')
+
+    def get_driver(self):
+        self.driver.maximize_window()
+>>>>>>> 9148a8f73a2ae7d4de39b67b9ae201b0273784d9
 
     @classmethod
     def get_driver(cls):
