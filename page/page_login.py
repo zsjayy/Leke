@@ -4,7 +4,7 @@ from basic.get_driver import GetDriver
 class PageLogin(GetDriver):
 
     def page_input_username(self):
-        self.driver.find_element_by_id("loginName").send_keys('2525545')
+        self.driver.find_element_by_id("loginName").send_keys('3168399')
 
     def page_input_password(self):
         self.driver.find_element_by_id("password").send_keys('leke1234')
